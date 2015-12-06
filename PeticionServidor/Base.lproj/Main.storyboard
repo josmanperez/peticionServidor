@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PeticionServidor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce ISBN del libro: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q68-YA-qq4">
+                                <rect key="frame" x="69" y="94" width="183" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ISBN" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="xZz-D9-uji">
+                                <rect key="frame" x="69" y="138" width="183" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="aMi-AY-Eep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="USg-5f-O2D"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jry-aC-B8f">
+                                <rect key="frame" x="0.0" y="226" width="320" height="300"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRW-NC-MBg">
+                                        <rect key="frame" x="8" y="8" width="304" height="284"/>
+                                        <animations/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="wRW-NC-MBg" firstAttribute="trailing" secondItem="Jry-aC-B8f" secondAttribute="trailingMargin" id="0hs-Ko-eNp"/>
+                                    <constraint firstItem="wRW-NC-MBg" firstAttribute="leading" secondItem="Jry-aC-B8f" secondAttribute="leadingMargin" id="BXm-au-QaK"/>
+                                    <constraint firstAttribute="height" constant="300" id="JrR-k5-dc9"/>
+                                    <constraint firstItem="wRW-NC-MBg" firstAttribute="bottom" secondItem="Jry-aC-B8f" secondAttribute="bottomMargin" id="ci2-q2-Ssg"/>
+                                    <constraint firstItem="wRW-NC-MBg" firstAttribute="top" secondItem="Jry-aC-B8f" secondAttribute="topMargin" id="wEJ-Hv-K4c"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="b7S-Gn-3MR">
+                                <rect key="frame" x="260" y="143" width="20" height="20"/>
+                                <animations/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jry-aC-B8f" secondAttribute="trailing" id="5hj-bB-Kra"/>
+                            <constraint firstItem="q68-YA-qq4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kO-mE-8fl"/>
+                            <constraint firstItem="b7S-Gn-3MR" firstAttribute="leading" secondItem="xZz-D9-uji" secondAttribute="trailing" constant="8" symbolic="YES" id="Ac8-2k-CH3"/>
+                            <constraint firstItem="b7S-Gn-3MR" firstAttribute="centerY" secondItem="xZz-D9-uji" secondAttribute="centerY" id="E9K-M9-cXw"/>
+                            <constraint firstItem="Jry-aC-B8f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="92" id="OaO-Sr-PRI"/>
+                            <constraint firstItem="xZz-D9-uji" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QlX-hQ-wN2"/>
+                            <constraint firstItem="xZz-D9-uji" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-131" id="WP0-Gg-OGt"/>
+                            <constraint firstItem="q68-YA-qq4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-179.5" id="YuB-rV-LJ4"/>
+                            <constraint firstItem="Jry-aC-B8f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iLL-y8-GbO"/>
+                            <constraint firstItem="Jry-aC-B8f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uAl-5Q-lm7"/>
+                        </constraints>
+                        <connections>
+                            <action selector="backgroundTap:" destination="BYZ-38-t0r" eventType="touchDown" id="W7c-KZ-vhJ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="isbnInputText" destination="xZz-D9-uji" id="HK6-Yi-wBa"/>
+                        <outlet property="spinner" destination="b7S-Gn-3MR" id="CFd-9Y-kR0"/>
+                        <outlet property="textViewResultado" destination="wRW-NC-MBg" id="6FH-ZS-3C9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="355"/>
+        </scene>
+    </scenes>
+</document>
