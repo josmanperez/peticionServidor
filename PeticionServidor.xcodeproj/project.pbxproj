@@ -14,7 +14,6 @@
 		9C5958571C1363D80019FD8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5958551C1363D80019FD8D /* LaunchScreen.storyboard */; };
 		9C5958621C1363D80019FD8D /* PeticionServidorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5958611C1363D80019FD8D /* PeticionServidorTests.swift */; };
 		9C59586D1C1363D80019FD8D /* PeticionServidorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59586C1C1363D80019FD8D /* PeticionServidorUITests.swift */; };
-		9CE8A82D1C2D95E300C9E47C /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8A82C1C2D95E300C9E47C /* Modelo.swift */; };
 		9CE8A82F1C2D971B00C9E47C /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8A82E1C2D971B00C9E47C /* NetworkOperation.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 		9C5958681C1363D80019FD8D /* PeticionServidorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeticionServidorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C59586C1C1363D80019FD8D /* PeticionServidorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeticionServidorUITests.swift; sourceTree = "<group>"; };
 		9C59586E1C1363D80019FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CE8A82C1C2D95E300C9E47C /* Modelo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Modelo.swift; path = ../../../../XCODE/Coursera/PeticionServidor/PeticionServidor/Modelo.swift; sourceTree = "<group>"; };
 		9CE8A82E1C2D971B00C9E47C /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +105,6 @@
 				9C5958531C1363D80019FD8D /* Assets.xcassets */,
 				9C5958551C1363D80019FD8D /* LaunchScreen.storyboard */,
 				9C5958581C1363D80019FD8D /* Info.plist */,
-				9CE8A82C1C2D95E300C9E47C /* Modelo.swift */,
 				9CE8A82E1C2D971B00C9E47C /* NetworkOperation.swift */,
 			);
 			path = PeticionServidor;
@@ -263,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE8A82F1C2D971B00C9E47C /* NetworkOperation.swift in Sources */,
-				9CE8A82D1C2D95E300C9E47C /* Modelo.swift in Sources */,
 				9C59584F1C1363D80019FD8D /* ViewController.swift in Sources */,
 				9C59584D1C1363D80019FD8D /* AppDelegate.swift in Sources */,
 			);
